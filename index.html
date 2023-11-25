@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+       
+        .fixed-nav {
+            transition: left 0.5s, right 0.5s, width 0.5s;
+        }
+        input{
+            background-color: #f5f5f5;
+        }
+        textarea{
+            background-color: #f5f5f5;
+        }
+    </style>
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+</head>
+
+<body class="font-sans bg-cover bg-no-repeat bg-fixed bg-center min-h-full w-full" style="background-image: url(https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg);" >
+
+    <div class="bg-fixed bg-center bg-cover bg-no-repeat min-h-[60vh] w-full "
+        style="background-image: url(https://media.istockphoto.com/id/1481842029/photo/3d-computer-monitor-and-program-code-development-web-coding-concept-website-programming.webp?b=1&s=612x612&w=0&k=20&c=_N5yxPOshOK0PzvDQ06Hqmhwewf1cMkb5JKiWARoDEU=);">
+        <div class="flex flex-col justify-center  min-h-screen bg-black bg-opacity-70 ">
+            <nav class="p-4 md:p-6 bg-white flex items-center text-black absolute top-3 
+        " style=" left: 40px; right: 40px;">
+                <div class="w-1/2 text-2xl  " style="letter-spacing: 2px;">
+                    <span class="text-yellow-400 italic font-bold">S</span> SHER.
+                </div>
+                <div class="w-1/2 flex justify-end items-center md:hidden">
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-align-center">
+                        <line x1="18" y1="10" x2="6" y2="10"></line>
+                        <line x1="21" y1="6" x2="3" y2="6"></line>
+                        <line x1="21" y1="14" x2="3" y2="14"></line>
+                        <line x1="18" y1="18" x2="6" y2="18"></line>
+                    </svg>
+                </div>
+                <ul class=" justify-end items-center hidden md:flex  space-x-4 w-1/2 text-base font-semibold  "
+                    style="letter-spacing: 2px;">
+                    <li><a href="#Home"
+                            class="hover:underline hover:text-yellow-500 transform transition-all duration-500">Home</a>
+                    </li>
+                    <li><a href="#Service"
+                            class="hover:underline hover:text-yellow-500 transform transition-all duration-500">Service</a>
+                    </li>
+                    <li><a href="#Company"
+                            class="hover:underline hover:text-yellow-500 transform transition-all duration-500">Team</a>
+                    </li>
+                    <li><a href="#Projects"
+                            class="hover:underline hover:text-yellow-500 transform transition-all duration-500">Projects</a>
+                    </li>
+                    <li><a href="#Contact"
+                            class="hover:underline hover:text-yellow-500 transform transition-all duration-500">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="fixed top-[36%] left-0 shadow-2xl bg-white py-4  z-20">
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-settings animate-spin duration-1000">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                    </path>
+                </svg>
+
+            </div>
+            <div class="fixed top-[30%] bg-white right-0 z-20 shadow-2xl hidden md:block animate__animated animate__fadeIn">
+                <div class="py-2  px-2 relative group border-b border-black">
+                    <!-- Your SVG icon goes here -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" class="rounded-full" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <div class="py-2  px-2 relative group border-b border-black">
+                    <!-- Your SVG icon goes here -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" class="rounded-full" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <div class="py-2  px-2 relative group border-b border-black">
+                    <!-- Your SVG icon goes here -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" class="rounded-full" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <div class="py-2  px-2 relative group border-b border-black">
+                    <!-- Your SVG icon goes here -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" class="rounded-full" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+            <header id="Home" class="mt-20 space-y-5">
+                <h1 style="letter-spacing: 3px;" class="  mx-6 uppercase font-bold text-3xl  text-center  text-white">we
+                    provide best development service</h1>
+                <p class="text-center italic mx-8 text-white text-sm">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Nemo ex veniam repudiandae minus aliquam tenetur.</p>
+                <div class="flex  md:space-y-0 space-y-4 uppercase space-x-2  justify-center items-center ">
+                    <div class="text-center">
+                        <button class="bg-yellow-400 text-white font-semibold text-sm py-4 px-8 uppercase"
+                            style="letter-spacing:3px;">Our services</button>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-center items-center   ">
+                    <a href="#goAhead">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevrons-down text-white animate-bounce">
+                            <polyline points="7 13 12 18 17 13"></polyline>
+                            <polyline points="7 6 12 11 17 6"></polyline>
+                        </svg></a>
+                </div>
+            </header>
+
+
+
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 ">
+        <div class="bg-yellow-400  grid grid-cols-1 md:grid-cols-2 ">
+            <div></div>
+            <div class="bg-black text-white mx-8 md:mx-0">
+                <div class="flex justify-center items-center p-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-award">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="bg-yellow-400 p-4 italic text-white" id="goAhead">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolores?</p>
+        </div>
+        <div class="bg-yellow-400 grid grid-cols-1 md:grid-cols-2 ">
+            <div></div>
+            <div class="bg-black text-white mx-8 md:mx-0">
+                <div class="flex justify-center items-center p-4">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-award">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+
+                        </svg>
+                    </div>
+                    <div class="uppercase">Get this</div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <section class="2  bg-white mx-3 md:mx-56 p-4 py-6 space-y-6 border-b-2 border-gray-400" id="Service">
+        <div class="flex justify-center items-center space-x-6 py-4">
+            <div class="relative">
+                <p class="text-lg text-center">January 05, 2005</p>
+                <div class="absolute left-36 top-1/2 h-0.5 bg-gray-400 w-1/4 transform -translate-y-1/2"></div>
+                <div class="absolute right-36 top-1/2 h-0.5 bg-gray-400 w-1/4 transform -translate-y-1/2"></div>
+              </div>
+
+        </div>
+       <h1 class="text-center text-3xl italic font-extrabold uppercase " style="letter-spacing: 3px;">and this is a massive haedline</h1>
+       <p class="text-lg text-right mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a culpa deserunt corrupti necessitatibus iusto quod dolore facere qui saepe recusandae atque consectetur ducimus cumque natus, eaque, tempore autem. Repudiandae!</p>
+       <div class=" shadow-yellow-600 shadow-2xl flex ">
+        <img class="w-full h-auto hover:scale-125" src="https://html5up.net/uploads/demos/massively/images/pic01.jpg" alt=""> 
+       </div>
+       <div class="text-center">
+        <button class="border-2 font-bold text-sm border-black hover:text-yellow-500 hover:border-yellow-500 text-black py-3 px-8 uppercase">full stroy</button>
+
+       </div>
+    </section>
+    <section class="3 bg-white  text-white mx-3 md:mx-56 p-4 space-y-6 border-b-2 border-gray-400 ">
+        <div class="grid  grid-cols-1 md:grid-cols-2 ">
+            <!-- col1 -->
+            <div class="border-2 bg-yellow-400  border-gray-400 p-2 space-y-6 ">
+                <div class="flex justify-center items-center space-x-6 py-4">
+                    <div class="relative">
+                        <p class="text-lg text-center">January 05, 2005</p>
+                        <div class="absolute left-36 top-1/2 h-0.5 bg-gray-400 w-1/4 transform -translate-y-1/2"></div>
+                        <div class="absolute right-36 top-1/2 h-0.5 bg-gray-400 w-1/4 transform -translate-y-1/2"></div>
+                      </div>
+        
+                </div>
+               <h1 class="text-center text-3xl italic font-extrabold uppercase " style="letter-spacing: 3px;">and this is a massive haedline</h1>
+               <p class="text-lg text-right mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a culpa deserunt corrupti necessitatibus iusto quod dolore facere qui saepe recusandae atque consectetur ducimus cumque natus, eaque, tempore autem. Repudiandae!</p>
+               <div class=" shadow-yellow-600 shadow-2xl flex ">
+                <img class="w-full h-auto hover:scale-125" src="https://html5up.net/uploads/demos/massively/images/pic01.jpg" alt=""> 
+               
+               </div>
+               <div class="text-center">
+                <button class="border-2 font-bold text-sm bg-white border-black hover:text-yellow-500 rounded-3xl hover:border-yellow-500 text-black py-3 px-8 uppercase">full stroy</button>
+        
+               </div>
+            </div>
+            <!-- col2 -->
+            <div class="border-2 bg-black  border-gray-400 p-2 space-y-6 ">
+                <div class="flex justify-center items-center space-x-6 py-4">
+                    <div class="relative">
+                        <p class="text-lg text-center">January 10, 2022</p>
+                        <div class="absolute left-36 top-1/2 h-0.5 bg-gray-400 w-1/4 transform -translate-y-1/2"></div>
+                        <div class="absolute right-36 top-1/2 h-0.5 bg-gray-400 w-1/4 transform -translate-y-1/2"></div>
+                      </div>
+        
+                </div>
+               <h1 class="text-center text-3xl italic font-extrabold uppercase " style="letter-spacing: 3px;">sed mangna ipsum faucibus</h1>
+               <p class="text-lg text-right mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a culpa deserunt corrupti necessitatibus iusto quod dolore facere qui saepe recusandae atque consectetur ducimus cumque natus, eaque, tempore autem. Repudiandae!</p>
+               <div class=" shadow-yellow-600 shadow-2xl flex ">
+                <img class="w-full h-auto hover:scale-125" src="https://html5up.net/uploads/demos/massively/images/pic01.jpg" alt=""> 
+
+               </div>
+               <div class="text-center">
+                <button class="border-2 font-bold text-sm bg-white border-black hover:text-yellow-500 rounded-3xl hover:border-yellow-500 text-black py-3 px-8 uppercase">full stroy</button>
+        
+               </div>
+            </div>
+            <!-- col3 -->
+            <div class="border-2 bg-yellow-400 md:bg-black border-gray-400 p-2 space-y-6 ">
+                <div class="flex justify-center items-center space-x-6 py-4">
+                    <div class="relative">
+                        <p class="text-lg text-center">January 30, 2020</p>
+                        <div class="absolute left-36 top-1/2 h-0.5 bg-gray-400 w-1/4 transform -translate-y-1/2"></div>
+                        <div class="absolute right-36 top-1/2 h-0.5 bg-gray-400 w-1/4 transform -translate-y-1/2"></div>
+                      </div>
+        
+                </div>
+               <h1 class="text-center text-3xl italic font-extrabold uppercase " style="letter-spacing: 3px;">primise eget imperdiet lorem</h1>
+               <p class="text-lg text-right mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a culpa deserunt corrupti necessitatibus iusto quod dolore facere qui saepe recusandae atque consectetur ducimus cumque natus, eaque, tempore autem. Repudiandae!</p>
+               <div class=" shadow-yellow-600 shadow-2xl flex ">
+                <img class="w-full h-auto hover:scale-125" src="https://html5up.net/uploads/demos/massively/images/pic01.jpg" alt=""> 
+               
+               </div>
+               <div class="text-center">
+                <button class="border-2 font-bold text-sm bg-white border-black hover:text-yellow-500 rounded-3xl hover:border-yellow-500 text-black py-3 px-8 uppercase">full stroy</button>
+        
+               </div>
+            </div>
+            <!-- col4  -->
+            <div class="border-2 bg-black md:bg-yellow-400 border-gray-400 p-2 space-y-6 ">
+                <div class="flex justify-center items-center space-x-6 py-4">
+                    <div class="relative">
+                        <p class="text-lg text-center">Feb 15, 2023</p>
+                        <div class="absolute left-36 top-1/2 h-0.5 bg-gray-400 w-1/4 transform -translate-y-1/2"></div>
+                        <div class="absolute right-36 top-1/2 h-0.5 bg-gray-400 w-1/4 transform -translate-y-1/2"></div>
+                      </div>
+        
+                </div>
+               <h1 class="text-center text-3xl italic font-extrabold uppercase " style="letter-spacing: 3px;">antt mattis interdum dolor</h1>
+               <p class="text-lg text-right mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a culpa deserunt corrupti necessitatibus iusto quod dolore facere qui saepe recusandae atque consectetur ducimus cumque natus, eaque, tempore autem. Repudiandae!</p>
+               <div class=" shadow-yellow-600 shadow-2xl flex ">
+                <img class="w-full h-auto hover:scale-125" src="https://html5up.net/uploads/demos/massively/images/pic01.jpg" alt=""> 
+               
+               </div>
+               <div class="text-center">
+                <button class="border-2 font-bold text-sm bg-white border-black hover:text-yellow-500 rounded-3xl hover:border-yellow-500 text-black py-3 px-8 uppercase">full stroy</button>
+        
+               </div>
+            </div>
+        
+
+            
+            
+
+        </div>
+
+    </section>
+    <section style="background-color: #f5f5f5;" class="4  mx-3 md:mx-56 p-4 space-y-6 border-b-2 border-gray-400" id="Team">
+        <div class="grid grid-cols-1 md:grid-cols-2 place-items-center">
+            <div class="col1 md:border-r-2 border-gray-400 p-2 md:p-4">
+                <form action="" class="p-4 space-y-3 text-sm">
+                    <label for="name" class="font-bold text-gray-600 ">NAME</label>
+                    <input type="" class="border border-gray-400 w-full p-3">
+                    <label for="name" class="font-bold text-gray-600 ">EMAIL</label>
+                    <input type="" class="border border-gray-400 w-full p-3">
+                    <label for="name" class="font-bold text-gray-600  ">MESSAGE</label>
+                    <textarea name="" id="" cols="30" rows="10" class="border border-gray-400 w-full"></textarea>
+                   
+                    <div>
+                        <button class="uppercase font-bold border border-gray-500 text-gray-500 py-3 px-6">send message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col2 text-gray-600 space-y-4 p-2 md:p-4">
+                <div class="flex items-center space-x-6 border-t border-gray-300 p-4">
+                    <h1 class="uppercase font-bold text-lg ">address</h1>
+                    <p class="text-gray-400 text-sm font-serif">1244 somewhere Road #9078 <br> Navshile, TN 00000-00</p>
+
+                </div>
+                <div class="flex items-center  space-x-6 border-t border-gray-300 p-4">
+                    <h1 class="uppercase font-bold text-lg  ">Phone</h1>
+                    <p class="text-gray-400 text-sm font-serif underline">(000)000-000</p>
+
+                </div>
+                <div class="flex  space-x-6 border-t border-gray-300 p-4 items-center">
+                    <h1 class="uppercase font-bold text-lg ">email</h1>
+                    <p class="text-gray-400 text-sm font-serif underline">info@untitled.com</p>
+
+                </div>
+                 <div class="flex  space-x-6 border-t border-gray-300 p-4 items-center">
+                    <h1 class="uppercase font-bold text-lg ">social</h1>
+                    <p class="text-gray-400 text-sm font-serif">1244 somewhere Road #9078 <br> Navshile, TN 00000-00</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="5 p-4 space-y-4">
+        <h1 class="text-center font-bold underline text-white ">&copy;<span class="text-yellow-400">S.</span>SHER</h1>
+        <h1 class="text-center font-bold underline text-white "><span class="text-yellow-400">S.DESIGG:</span>SHER</h1>
+        <h1 class="text-center font-bold underline text-white "><span class="text-yellow-400">S.POWERED:</span>SHER</h1>
+
+
+    </section>
+
+
+
+    <!-- Include JavaScript for smooth scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const nav = document.querySelector('nav');
+
+            window.addEventListener('scroll', function () {
+                // Change styles based on scroll position
+                if (window.scrollY > 0) {
+                    nav.classList.add('fixed-nav');
+                    nav.style.left = '0';
+                    nav.style.right = '0';
+                } else {
+                    nav.classList.remove('fixed-nav');
+                    nav.style.left = '40px';
+                    nav.style.right = '40px';
+
+                }
+            });
+        });
+        // JavaScript to handle hover effect
+        const element = document.querySelector('.group');
+
+        element.addEventListener('mouseenter', function () {
+            const popup = this.querySelector('.absolute');
+            popup.classList.remove('hidden');
+        });
+
+        element.addEventListener('mouseleave', function () {
+            const popup = this.querySelector('.absolute');
+            popup.classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>
